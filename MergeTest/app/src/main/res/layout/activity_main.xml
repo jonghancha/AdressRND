@@ -9,15 +9,13 @@
 
 
     <Button
-<<<<<<< HEAD
         android:id="@+id/btn3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button3"
         />
 
-
-=======
+        <Button
         android:id="@+id/btn_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,6 +28,5 @@
         android:layout_height="wrap_content"
         android:text="BUTTON 1"
         />
->>>>>>> 2c83eece54f0718bba7b97d388a8652ae0246568
 
 </LinearLayout>

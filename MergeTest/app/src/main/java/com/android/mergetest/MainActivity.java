@@ -23,14 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn3 = findViewById(R.id.btn3);
         btn3.setOnClickListener(mClick);
-    }
 
-    View.OnClickListener mClick = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Toast.makeText(MainActivity.this, "버튼입니", Toast.LENGTH_SHORT).show();
-        }
-    };
 
         btn_2 = findViewById(R.id.btn_2);
 
@@ -54,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Button 1 Clicked", Toast.LENGTH_SHORT).show();
                     break;
             }
+        }
+    };
+
+    View.OnClickListener mClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(MainActivity.this, "버튼입니", Toast.LENGTH_SHORT).show();
         }
     };
 
