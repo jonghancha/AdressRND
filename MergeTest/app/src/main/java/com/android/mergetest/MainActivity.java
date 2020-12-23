@@ -9,6 +9,10 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button btn3;
+
+
+
     Button btn_2;
     Button button1;
     Button btn4;
@@ -17,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btn3 = findViewById(R.id.btn3);
+        btn3.setOnClickListener(mClick);
+
 
         btn_2 = findViewById(R.id.btn_2);
 
@@ -52,6 +60,13 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             Toast.makeText(MainActivity.this, "강후", Toast.LENGTH_SHORT).show();
 
+        }
+    };
+
+    View.OnClickListener mClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(MainActivity.this, "버튼입니", Toast.LENGTH_SHORT).show();
         }
     };
 
