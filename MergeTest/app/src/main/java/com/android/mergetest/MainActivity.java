@@ -9,15 +9,24 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    Button btn_2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btn_2 = findViewById(R.id.btn_2);
+
+        btn_2.setOnClickListener(btn2ClickListener);
 
     }
+    View.OnClickListener btn2ClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(MainActivity.this, "버튼 지은", Toast.LENGTH_SHORT).show();
+        }
+    };
 
 
 }
