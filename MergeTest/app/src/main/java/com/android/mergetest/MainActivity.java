@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button btn_2;
+    Button button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
         btn_2.setOnClickListener(btn2ClickListener);
 
+        button1 = findViewById(R.id.btn1);
+        button1.setOnClickListener(mClickListener);
     }
     View.OnClickListener btn2ClickListener = new View.OnClickListener() {
         @Override
@@ -28,5 +31,15 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    View.OnClickListener mClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()) {
+                case R.id.btn1:
+                    Toast.makeText(MainActivity.this, "Button 1 Clicked", Toast.LENGTH_SHORT).show();
+                    break;
+            }
+        }
+    };
 
 }
