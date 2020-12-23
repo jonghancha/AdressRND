@@ -9,6 +9,7 @@
 
 
     <Button
+<<<<<<< HEAD
         android:id="@+id/btn3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,5 +17,19 @@
         />
 
 
+=======
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="지은 버튼"
+        />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUTTON 1"
+        />
+>>>>>>> 2c83eece54f0718bba7b97d388a8652ae0246568
 
 </LinearLayout>
