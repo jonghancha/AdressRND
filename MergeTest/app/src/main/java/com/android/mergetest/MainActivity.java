@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button btn3;
+
 
 
     @Override
@@ -16,8 +18,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        btn3 = findViewById(R.id.btn3);
+        btn3.setOnClickListener(mClick);
     }
+
+    View.OnClickListener mClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(MainActivity.this, "버튼입니", Toast.LENGTH_SHORT).show();
+        }
+    };
 
 
 }
